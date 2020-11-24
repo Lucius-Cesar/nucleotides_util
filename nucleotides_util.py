@@ -108,7 +108,7 @@ def complement_sequence(sequence: str, rna_out: bool = True) -> str:
 def correct_and_complement_sequence(sequence: str) -> str:
     corrected_and_complemented_sequence = ""
     if is_valid_na is False:
-        keep_only_characters(sequence, allowed_characters=NA_BASES)
+        corrected_sequence = keep_only_characters(sequence, allowed_characters=NA_BASES)
         corrected_and_complemented_sequence = complement_sequence(corrected_sequence)
     return corrected_and_complemented_sequence
 
