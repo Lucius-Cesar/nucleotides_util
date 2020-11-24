@@ -217,7 +217,7 @@ def get_peptide_weight(peptide: str) -> float:
     return round(peptide_weight, 2)
 
 
-nucleotides_sequence = str(input("Entez une séquence de nucléotides:"))
+nucleotides_sequence = str(input("Entrez une séquence de nucléotides:"))
 if is_valid_na(nucleotides_sequence) is False:
     corrected_sequence = keep_only_characters(nucleotides_sequence, allowed_characters=NA_BASES)
 if is_valid_dna(nucleotides_sequence) is True:
